@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dos;
 
-/**
- *
- * @author cirilo
- */
 import Estructura.Lista;
 import java.io.File;
 import java.io.IOException;
@@ -112,9 +103,7 @@ public class Imagen extends JFrame {
         setVisible(true);
     }
 
-    /**
-     * Llena mpixel,mrojo,mverde,mazul con los valores de la imagen tomada
-     */
+    /*Llena mpixel,mrojo,mverde,mazul con los valores de la imagen tomada*/
     private void llena() {
         for (int i = 0; i < ancho; i++) {
             for (int j = 0; j < alto; j++) {
@@ -321,327 +310,40 @@ public class Imagen extends JFrame {
 
     }
 
-    private void imprimeValores() {
-        int numero = 0, numero2 = 0, numero3 = 0, numero4 = 0, numero5 = 0, numero6 = 0, numero7 = 0, numero8 = 0, numero9 = 0, numero10 = 0, numero11 = 0, numero12 = 0;
-        int conta1 = 0, contad2 = 0, contad3 = 0, contad4 = 0, contad5 = 0, contad6 = 0, contad7 = 0, contad8 = 0, contad9 = 0, contad10 = 0, contad11 = 0, contad12 = 0;
-
-        int count = 0;
-        boolean activo1 = false;
-        for (int i = 0; i < alto; i++) {
-            for (int j = 0; j < ancho; j++) {
-                if (mregiones[i][j] != 0 && !activo1) {
-                    numero = mregiones[i][j];
-                    activo1 = true;
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 1 && mregiones[i][j] != numero) {
-                    numero2 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 2 && mregiones[i][j] != numero && mregiones[i][j] != numero2) {
-                    numero3 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 3 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3) {
-                    numero4 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 4 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4) {
-                    numero5 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 5 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5) {
-                    numero6 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 6 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6) {
-                    numero7 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 7 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6 && mregiones[i][j] != numero7) {
-                    numero8 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 8 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6 && mregiones[i][j] != numero7 && mregiones[i][j] != numero8) {
-                    numero9 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 9 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6 && mregiones[i][j] != numero7 && mregiones[i][j] != numero8 && mregiones[i][j] != numero9) {
-                    numero10 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 10 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6 && mregiones[i][j] != numero7 && mregiones[i][j] != numero8 && mregiones[i][j] != numero9 && mregiones[i][j] != numero10) {
-                    numero11 = mregiones[i][j];
-                    count++;
-                }
-                if (mregiones[i][j] != 0 && activo1 && count == 11 && mregiones[i][j] != numero && mregiones[i][j] != numero2 && mregiones[i][j] != numero3 && mregiones[i][j] != numero4 && mregiones[i][j] != numero5 && mregiones[i][j] != numero6 && mregiones[i][j] != numero7 && mregiones[i][j] != numero8 && mregiones[i][j] != numero9 && mregiones[i][j] != numero10 && mregiones[i][j] != numero11) {
-                    numero12 = mregiones[i][j];
-                    count++;
-                }
-            }
-        }
-        for (int i = 0; i < alto; i++) {
-            for (int j = 0; j < ancho; j++) {
-                if (mregiones[i][j] == numero) {
-                    conta1++;
-                }
-                if (mregiones[i][j] == numero2) {
-                    contad2++;
-                }
-                if (mregiones[i][j] == numero3) {
-                    contad3++;
-                }
-                if (mregiones[i][j] == numero4) {
-                    contad4++;
-                }
-                if (mregiones[i][j] == numero5) {
-                    contad5++;
-                }
-                if (mregiones[i][j] == numero6) {
-                    contad6++;
-                }
-                if (mregiones[i][j] == numero7) {
-                    contad7++;
-                }
-                if (mregiones[i][j] == numero8) {
-                    contad8++;
-                }
-                if (mregiones[i][j] == numero9) {
-                    contad9++;
-                }
-                if (mregiones[i][j] == numero10) {
-                    contad10++;
-                }
-                if (mregiones[i][j] == numero11) {
-                    contad11++;
-                }
-                if (mregiones[i][j] == numero12) {
-                    contad12++;
-                }
-            }
-        }
-
-        System.out.println("\n" + numero + " = " + conta1
-                + ((contad2 > 40 && numero2 != 0) ? ("\n" + numero2 + " = " + contad2) : "")
-                + ((contad3 > 40 && numero3 != 0) ? ("\n" + numero3 + " = " + contad3) : "")
-                + ((contad4 > 40 && numero4 != 0) ? ("\n" + numero4 + " = " + contad4) : "")
-                + ((contad5 > 40 && numero5 != 0) ? ("\n" + numero5 + " = " + contad5) : "")
-                + ((contad6 > 40 && numero6 != 0) ? ("\n" + numero6 + " = " + contad6) : "")
-                + ((contad7 > 40 && numero7 != 0) ? ("\n" + numero7 + " = " + contad7) : "")
-                + ((contad8 > 40 && numero8 != 0) ? ("\n" + numero8 + " = " + contad8) : "")
-                + ((contad9 > 40 && numero9 != 0) ? ("\n" + numero9 + " = " + contad9) : "")
-                + ((contad10 > 40 && numero10 != 0) ? ("\n" + numero10 + " = " + contad10) : "")
-                + ((contad11 > 40 && numero11 != 0) ? ("\n" + numero11 + " = " + contad11) : "")
-                + ((contad12 > 40 && numero12 != 0) ? ("\n" + numero12 + " = " + contad12) : "")
-        );
-
-        try {
-            File f1 = new File(fc.getSelectedFile() + "promedio.png");
-            BufferedImage img1 = ImageIO.read(f1);
-            BufferedImage img2 = ImageIO.read(f1);
-            BufferedImage img3 = ImageIO.read(f1);
-            BufferedImage img4 = ImageIO.read(f1);
-            BufferedImage img5 = ImageIO.read(f1);
-            BufferedImage img6 = ImageIO.read(f1);
-            BufferedImage img7 = ImageIO.read(f1);
-            BufferedImage img8 = ImageIO.read(f1);
-            BufferedImage img9 = ImageIO.read(f1);
-            BufferedImage img10 = ImageIO.read(f1);
-            BufferedImage img11 = ImageIO.read(f1);
-            BufferedImage img12 = ImageIO.read(f1);
-            //int numeroDeRegiones = 0;
-
-            for (int i = 0; i < ancho; i++) {
-                for (int j = 0; j < alto; j++) {
-                    int p = img1.getRGB(i, j);
-                    if ((conta1 > 40 && numero != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img1.setRGB(i, j, p);
-                    }
-                    if ((contad2 > 40 && numero2 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero2) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img2.setRGB(i, j, p);
-                    }
-                    if ((contad3 > 40 && numero3 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero3) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img3.setRGB(i, j, p);
-                    }
-                    if ((contad4 > 40 && numero4 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero4) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img4.setRGB(i, j, p);
-                    }
-                    if ((contad5 > 40 && numero5 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero5) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img5.setRGB(i, j, p);
-                    }
-                    if ((contad6 > 40 && numero6 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero6) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img6.setRGB(i, j, p);
-                    }
-                    if ((contad7 > 40 && numero7 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero7) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img7.setRGB(i, j, p);
-                    }
-                    if ((contad8 > 40 && numero8 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero8) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img8.setRGB(i, j, p);
-                    }
-                    if ((contad9 > 40 && numero9 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero9) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img9.setRGB(i, j, p);
-                    }
-                    if ((contad10 > 40 && numero10 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero10) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img10.setRGB(i, j, p);
-                    }
-                    if ((contad11 > 40 && numero11 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero11) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img11.setRGB(i, j, p);
-                    }
-                    if ((contad12 > 40 && numero12 != 0)) {
-                        //numeroDeRegiones++;
-                        if (mregiones[j][i] == numero12) {
-                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | 0;
-                        } else {
-                            p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
-                        }
-                        img12.setRGB(i, j, p);
-                    }
-                }
-            }
-
-            //System.out.println("Total de regiones = "+numeroDeRegiones);
-            if ((conta1 > 40 && numero != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta1.png");
-                ImageIO.write(img1, "png", f2);
-            }
-            if ((contad2 > 40 && numero2 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta2.png");
-                ImageIO.write(img2, "png", f2);
-            }
-            if ((contad3 > 40 && numero3 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta3.png");
-                ImageIO.write(img3, "png", f2);
-            }
-            if ((contad4 > 40 && numero4 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta4.png");
-                ImageIO.write(img4, "png", f2);
-            }
-            if ((contad5 > 40 && numero5 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta5.png");
-                ImageIO.write(img5, "png", f2);
-            }
-            if ((contad6 > 40 && numero6 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta6.png");
-                ImageIO.write(img6, "png", f2);
-            }
-            if ((contad7 > 40 && numero7 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta7.png");
-                ImageIO.write(img7, "png", f2);
-            }
-            if ((contad8 > 40 && numero8 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta8.png");
-                ImageIO.write(img8, "png", f2);
-            }
-            if ((contad9 > 40 && numero9 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta9.png");
-                ImageIO.write(img9, "png", f2);
-            }
-            if ((contad10 > 40 && numero10 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta10.png");
-                ImageIO.write(img10, "png", f2);
-            }
-            if ((contad11 > 40 && numero11 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta11.png");
-                ImageIO.write(img11, "png", f2);
-            }
-            if ((contad12 > 40 && numero12 != 0)) {
-                File f2 = new File(fc.getSelectedFile() + "etiqueta12.png");
-                ImageIO.write(img12, "png", f2);
-            }
-        } catch (IOException e) {
-            System.out.println(e);
-        }
-
-    }
-
     private void regiones2() {
         ArrayList<Integer> lista = new ArrayList<Integer>();
+        ArrayList<Integer> contl = new ArrayList<Integer>();
         for (int i = 0; i < alto; i++) {
             for (int j = 0; j < ancho; j++) {
-                if (!checaLista(lista, mregiones[i][j])) {
+                if (!checaLista(lista, mregiones[i][j]) && mregiones[i][j] != 0) {
                     lista.add(mregiones[i][j]);
+                    contl.add(mregiones[i][j]);
+                } else {
+                    int xs = checaListaNum(lista, mregiones[i][j]);
+                    if (xs != -1) {
+                        int xy = contl.get(xs);
+                        xy++;
+                        contl.set(xs, xy);
+                    }
+
                 }
             }
         }
+
         System.out.println("Hay " + lista.size() + " regiones");
-        ArrayList<BufferedImage> ll = new ArrayList<BufferedImage>();
+
+        for (int i = 0; i < contl.size(); i++) {
+            System.out.println(i + " = " + contl.get(i));
+        }
+
         try {
-            for (int i = 0; i < lista.size(); i++) {
-                ll.add(new BufferedImage(ancho, alto, HEIGHT));
-                System.out.println("valor " + i + " = " + lista.get(i));
-            }
+            ArrayList<BufferedImage> ll = arregloLista();
             for (int k = 0; k < lista.size(); k++) {
                 for (int i = 0; i < ancho; i++) {
                     for (int j = 0; j < alto; j++) {
                         int p = ll.get(k).getRGB(i, j);
-                        if (mregiones[j][i] == (int) lista.get(k)) {
-                            p = (((p >> 24) & 0xff) << 24) | (k << 16) | (k << 8) | k;
+                        if (mregiones[j][i] == (int) lista.get(k) && contl.get(k) > 46) {
+                            p = (((p >> 24) & 0xff) << 24) | (0 << 16) | (0 << 8) | k;
                         } else {
                             p = (((p >> 24) & 0xff) << 24) | (255 << 16) | (255 << 8) | 255;
                         }
@@ -650,10 +352,46 @@ public class Imagen extends JFrame {
                 }
             }
             for (int i = 0; i < lista.size(); i++) {
-                ImageIO.write(ll.get(i), "png", new File(fc.getSelectedFile() + "Dato" + i + ".png"));
+                if (contl.get(i)>46) {
+                 ImageIO.write(ll.get(i), "png", new File(fc.getSelectedFile() + "Dato" + i + ".png"));   
+                }
             }
         } catch (Exception e) {
         }
+    }
+
+    private ArrayList<BufferedImage> arregloLista() {
+        ArrayList<BufferedImage> ll = new ArrayList<BufferedImage>();
+        try {
+            BufferedImage img0 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img0);
+            BufferedImage img1 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img1);
+            BufferedImage img2 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img2);
+            BufferedImage img3 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img3);
+            BufferedImage img4 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img4);
+            BufferedImage img5 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img5);
+            BufferedImage img6 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img6);
+            BufferedImage img7 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img7);
+            BufferedImage img8 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img8);
+            BufferedImage img9 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img9);
+            BufferedImage img10 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img10);
+            BufferedImage img11 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img11);
+            BufferedImage img12 = ImageIO.read(new File(fc.getSelectedFile() + "promedio.png"));
+            ll.add(img12);
+        } catch (Exception e) {
+        }
+        return ll;
     }
 
     private boolean checaLista(ArrayList lista, int x) {
@@ -663,6 +401,15 @@ public class Imagen extends JFrame {
             }
         }
         return false;
+    }
+
+    private int checaListaNum(ArrayList lista, int x) {
+        for (int i = 0; i < lista.size(); i++) {
+            if (x == (int) lista.get(i)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     private boolean numeroIgual(int[][] matriz, int x, int y, int cont) {
@@ -815,5 +562,4 @@ public class Imagen extends JFrame {
             System.out.println();
         }
     }
-
 }
